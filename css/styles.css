@@ -1,0 +1,300 @@
+:root {
+  --main-color: #212121;
+  --second-color: #2196f3;
+  --logo-color: #000000;
+  --text-color: #757575;
+  --main-background-color: #e5e5e5;
+  --footer-background-color: #2f303a;
+  --background-button-color: #f5f4fa;
+  --background-header-color: #ffffff;
+  --white-text-background-color: rgba(255, 255, 255, 1);
+  --white-contacts-color: rgba(255, 255, 255, 0.6);
+  --border-color: rgba(238, 238, 238, 1);
+}
+
+/* Шрифты*/
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Убираем маркеры списков */
+ul {
+  list-style-type: none;
+}
+
+/* Убираем подчеркивание у ссылок */
+.link {
+  text-decoration: none;
+}
+
+/* Цвет фона хэдэра */
+.header {
+  background-color: var(--white-text-background-color);
+}
+
+/* Логотип*/
+.logo {
+  color: var(--logo-color);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 26px;
+  line-height: 1.17;
+}
+
+/* Применяем отдельный стиль для логотипа футера */
+.footer > .logo {
+  color: var(--white-text-background-color);
+}
+
+/* Фокусим цветом логотип при наведении  */
+.logo:focus {
+  color: var(--second-color);
+}
+
+/* Цветная часть логотипа */
+.logo-item {
+  color: var(--second-color);
+}
+
+/* Навигация*/
+.nav-list .link {
+  color: var(--main-color);
+  background-color: var(--white-text-background-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.17;
+}
+
+/* Ховверим и фокусим все ссылки меню, при наведении курсора */
+.nav-list .link:hover,
+.nav-list .link:focus {
+  color: var(--second-color);
+}
+
+/* Контакты */
+.contacts-list .link {
+  color: var(--text-color);
+  background-color: var(--white-text-background-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.17;
+}
+
+/* Показываем на какой мы сейчам активной странице меню */
+.nav-list .link.current {
+  color: var(--second-color);
+}
+
+/* Ховерим и фокусим контакты, при наведении курсора */
+.contacts-list .link:hover,
+.contacts-list .link:focus {
+  color: var(--second-color);
+}
+
+.hero {
+  background-color: var(--footer-background-color);
+}
+
+/* Герой */
+.hero-title {
+  color: var(--white-text-background-color);
+  font-family: inherit;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+/* Ссылка героя */
+/* .hero-link {
+  color: var(--white-text-background-color);
+  background-color: var(--second-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.88;
+} */
+
+/* Ховерим и фокусим цвет ссылки героя */
+.hero-link:hover,
+.hero-link:focus {
+  color: var(--main-color);
+}
+
+.different {
+  background-color: var(--white-text-background-color);
+}
+
+/* Заголовок Дифферент */
+.different-title {
+  color: var(--main-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+/* Абзацы секции с особеностями */
+.different-text {
+  color: var(--text-color);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* Стилизация заголовка Ворка */
+.work-title {
+  color: var(--main-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+/* Наша команда */
+.team {
+  background-color: var(--background-button-color);
+}
+
+/* Стилтзпция аголовка нашей команда */
+.team-title {
+  color: var(--main-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+/* Состав команды */
+.team-subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+/* Должности */
+.team-text {
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+}
+
+/* Футер */
+.footer {
+  background-color: var(--footer-background-color);
+}
+
+/* Адрес */
+.address-text {
+  color: var(--background-header-color);
+  font-family: inherit;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+/* ссылки футера */
+.contacts-list-item {
+  color: var(--white-contacts-color);
+  font-family: inherit;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+/* Ховерим и фокусим ссылки футера */
+.contacts-list-item:hover,
+.contacts-list-item:focus {
+  color: var(--second-color);
+}
+
+/* Стили кнопок */
+.btn {
+  color: var(--main-color);
+  background-color: var(--background-button-color);
+  border: none;
+  border-radius: 4px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+/* Кнопка hero index.html */
+.hero > .btn {
+  color: var(--background-header-color);
+  background-color: var(--second-color);
+  line-height: 1.88;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+/* Ховерим и фокусим кнопки */
+.btn:hover,
+.btn:focus {
+  color: var(--background-header-color);
+  background-color: var(--second-color);
+}
+
+/* Прячем заголовок*/
+.main-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.project {
+  background-color: var(--white-text-background-color);
+}
+
+/* Границы проэктов */
+.project-item {
+  border-style: solid;
+  border-color: var(--border-color);
+  border-width: 1px;
+}
+
+/* Стилизация заголовков проэктов */
+.project-title {
+  color: var(--main-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+/* Стилизация подписей проэктов */
+.project-text {
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
