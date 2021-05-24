@@ -1,0 +1,90 @@
+:root {
+  --main-color: #212121;
+  --second-color: #2196f3;
+  --logo-color: #000000;
+  --text-color: #757575;
+  --main-background-color: #e5e5e5;
+  --footer-background-color: #2f303a;
+  --background-button-color: #f5f4fa;
+  --background-header-color: #ffffff;
+  --white-text-background-color: rgba(255, 255, 255, 1);
+  --white-contacts-color: rgba(255, 255, 255, 0.6);
+  --border-color: rgba(238, 238, 238, 1);
+}
+
+/* Стили семейства шрифтов и обнуление марджинов для боди */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+/* Убираем маркеры и обнуляем верхний и нижний марджины списков*/
+ul {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Обнуляем стили заголовков и парагарофов, заданые системой по умолчанию */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+/* Блочная модель для пикч с макс шириной картинок */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Убираем подчеркивание у ссылок */
+.link {
+  text-decoration: none;
+}
+
+/* Цвет фона хэдэра */
+.header {
+  background-color: var(--white-text-background-color);
+  border: 1px solid #ECECEC;
+}
+
+.footer {
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 252px;
+}
+
+/* Общий фон для героя и подвала */
+.hero,
+.footer {
+  background-color: var(--footer-background-color);
+  width: 1600px;
+}
+
+/* Общие стили для контейнера */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.team {
+  background-color: var(--background-button-color);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.different {
+  background-color: var(--white-text-background-color);
+}
+
+.project {
+  background-color: var(--white-text-background-color);
+}
