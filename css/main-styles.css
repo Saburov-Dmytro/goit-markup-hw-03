@@ -47,6 +47,9 @@ img {
   text-decoration: none;
 }
 
+.list {
+  list-style-type: none;
+}
 /* Цвет фона хэдэра */
 .header {
   background-color: var(--white-text-background-color);

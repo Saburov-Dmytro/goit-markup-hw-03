@@ -304,20 +304,6 @@
   color: var(--second-color);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Стили кнопок */
 .btn {
   color: var(--main-color);
@@ -337,6 +323,21 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Кнопка hero index.html */
 .hero > .btn {
