@@ -1,8 +1,65 @@
+:root {
+  --main-color: #212121;
+  --second-color: #2196f3;
+  --logo-color: #000000;
+  --text-color: #757575;
+  --main-background-color: #e5e5e5;
+  --footer-background-color: #2f303a;
+  --background-button-color: #f5f4fa;
+  --background-header-color: #ffffff;
+  --white-text-background-color: rgba(255, 255, 255, 1);
+  --white-contacts-color: rgba(255, 255, 255, 0.6);
+  --border-color: rgba(238, 238, 238, 1);
+}
+
+/* Стили семейства шрифтов и обнуление марджинов для боди */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+/* Убираем маркеры и обнуляем верхний и нижний марджины списков*/
+ul, ol{
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+/* Обнуляем стили заголовков и парагарофов, заданые системой по умолчанию */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+/* Блочная модель для пикч с макс шириной картинок */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Убираем подчеркивание у ссылок */
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style-type: none;
+}
+/* Цвет фона хэдэра */
+.header {
+  background-color: var(--white-text-background-color);
+  border-bottom: 1px solid #ECECEC;
+}
+
 /* Логотип*/
 .logo {
   margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 25px;
   color: var(--logo-color);
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -13,6 +70,7 @@
 /* Цветная часть логотипа */
 .logo-item {
   color: var(--second-color);
+  margin-right: 0;
 }
 
 .footer .logo:focus {
@@ -47,7 +105,6 @@
   font-style: normal;
   font-size: 14px;
   line-height: 1.17;
-  margin-right: 50px;
 }
 
 /* Ховерим и фокусим контакты, при наведении курсора */
@@ -59,12 +116,23 @@
 .nav-list,
 .contacts-list {
   display: flex;
+  margin-right: 50px;
+  padding: 30px 0;
 }
 
 .header-nav {
   display: flex;
   align-items: center;
 }
+
+/*
+.main-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-top: auto;
+} */
 
 .main-nav {
   display: flex;
@@ -83,8 +151,9 @@
 .hero {
   /* margin-left: auto; */
   margin-right: auto;
-  margin-bottom: 94px;
-  width: 1600px;
+  margin-left: auto;
+  padding-bottom: 94px;
+  padding-top: 200px;
   min-height: 600px;
   text-align: center;
 }
@@ -101,7 +170,6 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 40px;
-  padding-top: 200px;
   max-width: 696px;
 }
 
@@ -134,6 +202,11 @@
   overflow: hidden;
 }
 
+.different {
+  background-color: var(--white-text-background-color);
+    padding-top: 94px;
+}
+
 /* Заголовок Дифферент */
 .different-title {
   color: var(--main-color);
@@ -158,7 +231,6 @@
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
-  margin-bottom: 94px;
 }
 
 /* Размещаем блоки по 4 в строку и добавляем отступы между ними */
@@ -168,6 +240,11 @@
   margin-top: 30px;
 }
 
+.work {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* Стилизация заголовка Ворка */
 .work-title {
   color: var(--main-color);
@@ -175,7 +252,6 @@
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
   text-align: center;
 }
 
@@ -184,7 +260,7 @@
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
-  margin-bottom: 94px;
+  padding-top: 50px;
 }
 
 /* Размещает блоки по 3 в строке. Добавляет отступы между ними */
@@ -194,19 +270,22 @@
   margin-top: 30px;
 }
 
+.team {
+  background-color: var(--background-button-color);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .team-title {
   color: var(--main-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
   text-align: center;
-  padding-top: 94px;
-}
-
-.team-img{
-  margin-bottom: 30px;
 }
 
 /* Состав команды */
@@ -222,6 +301,12 @@
   background-color: var(--background-header-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.card-thumb {
+  padding-top: 50px;
 }
 
 /* Должности */
@@ -231,8 +316,8 @@
   line-height: 1.18;
   letter-spacing: 0.03em;
   text-align: center;
-  padding-bottom: 30px;
-  padding-top: 10px;
+  margin-top: 10px;
+  padding-bottom: 0;
 }
 
 .team-list {
@@ -240,7 +325,6 @@
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
-  padding-bottom: 94px;
 }
 
 .team-list > .team-item {
@@ -251,9 +335,17 @@
 
 .footer {
   display: block;
-  padding-top: 50px;
-  margin-bottom: 20px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   color: var(--background-header-color);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Общий фон для героя и подвала */
+.hero,
+.footer {
+  background-color: var(--footer-background-color);
 }
 
 /* Применяем отдельный стиль для логотипа футера */
@@ -280,6 +372,10 @@
   letter-spacing: 0.03em;
   margin-bottom: 9px;
   margin-top: 20px;
+}
+
+.contacts-item:first-child {
+  margin-right: 50px;
 }
 
 /* ссылки футера */
@@ -339,19 +435,10 @@
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
-/* 
-.main-list {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-left: auto;
-  margin-top: auto;
-} */
 
 .button {
-  margin-top: 94px;
-  margin-bottom: 50px;
-}
+  padding-top: 94px;
+ }
 
 .button:not(:last-child) {
   margin-right: 8px;
@@ -361,10 +448,17 @@
   border: 1px solid #ECECEC;
 } */
 
+/* Общие стили для контейнера */
 .container {
   margin-left: auto;
   margin-right: auto;
-  max-width: 1200px;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.project {
+  background-color: var(--white-text-background-color);
 }
 
 .project-list {
