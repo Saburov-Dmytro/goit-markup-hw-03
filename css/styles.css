@@ -41,6 +41,8 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  padding-top: 94px;
+  padding-bottom: 47px;
 }
 
 /* Убираем подчеркивание у ссылок */
@@ -78,14 +80,13 @@ img {
 }
 /* Навигация*/
 .nav-list .link {
+  display: block;
   color: var(--main-color);
   background-color: var(--white-text-background-color);
   font-weight: 500;
   font-style: normal;
   font-size: 14px;
   line-height: 1.17;
-  padding-top: 30px;
-  padding-bottom: 30   px;
 }
 
 /* Ховверим и фокусим все ссылки меню, при наведении курсора */
@@ -119,8 +120,8 @@ img {
 .contacts-list {
   display: flex;
   margin-right: 50px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  /* padding-top: 30px;
+  padding-bottom: 30px; */
 }
 
 .header-nav {
@@ -128,14 +129,20 @@ img {
   align-items: center;
 }
 
-/*
 .main-list {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin-left: auto;
   margin-top: auto;
-} */
+}
+
+
+.nav-item {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 
 .main-nav {
   display: flex;
@@ -409,13 +416,15 @@ img {
   font-size: 16px;
   line-height: 1.6;
   letter-spacing: 0.03em;
-  display: flex;
+  display: block;
   text-align: center;
   align-items: center;
   cursor: pointer;
   border: none;
   border-radius: 4px;
   padding: 6px 22px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
   /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
 }
 
@@ -446,10 +455,6 @@ img {
 .button:not(:last-child) {
   margin-right: 8px;
 }
-
-/* .container-buttons {
-  border: 1px solid #ECECEC;
-} */
 
 /* Общие стили для контейнера */
 .container {
@@ -518,4 +523,7 @@ img {
   border-bottom: 1px solid #eee;
   border-left: 1px solid #eee;
   border-right: 1px solid #eee;
+  display: block;
+  width: 370px;
+  height: 110px;
 }
