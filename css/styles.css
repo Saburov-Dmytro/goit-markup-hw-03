@@ -84,6 +84,8 @@ img {
   font-style: normal;
   font-size: 14px;
   line-height: 1.17;
+  padding-top: 30px;
+  padding-bottom: 30   px;
 }
 
 /* Ховверим и фокусим все ссылки меню, при наведении курсора */
@@ -117,7 +119,8 @@ img {
 .contacts-list {
   display: flex;
   margin-right: 50px;
-  padding: 30px 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .header-nav {
